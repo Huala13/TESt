@@ -8,23 +8,43 @@
     <style>
         .box{
             width: 700px;
+            height: 700px;
             margin: 100px auto;
             position: relative;
+            background: url(cloud.png);
+            background-size: cover;
         }
         .round{
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
-            background-color: #ee9999;
+            background-color: #ee999999;
         }
         .round-1{
-            left: 0;
-            top: 80px;
+            left: 50%;
+            transform: translate(-50%);
+            top: 0px;
         }
         .round-2{
-            left: 50px;
-            top: 100px;
+            left: 0px;
+            top: 45%;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 300px;
+        }
+        .round-3{
+            right: 0px;
+            top: 45%;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 300px;
+        }
+        .round-4{
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 0px;
+            border-radius: unset;
         }
         .showBox{
             width: 100px;
@@ -49,11 +69,10 @@
 </head>
 <body>
     <div class="box">
-        <div id="round-1" class="round round-1"></div>
+        <div class="round round-1"></div>
         <div class="round round-2"></div>
         <div class="round round-3"></div>
         <div class="round round-4"></div>
-        <div class="round round-5"></div>
     </div>
     <div class="showBox showBox1"></div>
     <div class="showBox showBox2"></div>
